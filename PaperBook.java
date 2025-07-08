@@ -1,3 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.quantumbookstorefulltest;
+
+/**
+ *
+ * @author Nada
+ */
 public class PaperBook extends Book {
     private int stock;
 
@@ -20,3 +30,4 @@ public class PaperBook extends Book {
         System.out.println("Quantum book store: Sending " + title + " to " + address + " via ShippingService.");
     }
 }
+

@@ -8,22 +8,19 @@ package com.mycompany.quantumbookstorefulltest;
  *
  * @author Nada
  */
-public class EBook extends Book {
-    private String fileType;
-
-    public EBook(String isbn, String title, int publishYear, double price, String author, String fileType) {
+public class ShowcaseBook extends Book {
+    public ShowcaseBook(String isbn, String title, int publishYear, double price, String author) {
         super(isbn, title, publishYear, price, author);
-        this.fileType = fileType;
     }
 
     @Override
     public boolean isAvailable() {
-        return true;
+        return false;
     }
 
     @Override
     public void handlePurchase(int quantity, String email, String address) {
-        System.out.println("Quantum book store: Sending " + title + " to " + email + " via MailService.");
+        throw new UnsupportedOperationException("Quantum book store: Showcase books are not for sale.");
     }
 }
 
